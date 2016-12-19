@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/action_restaurantes"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:icon="@drawable/shop1"-->
+        <!--android:title="Restaurantes"-->
+        <!--android:showAsAction="always"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_users"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:icon="@drawable/users1"-->
+        <!--android:title="Usuarios"-->
+        <!--android:showAsAction="always"/>-->
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/settings1"
+        android:title="@string/settings"
+        android:showAsAction="always"/>
+
+</menu>

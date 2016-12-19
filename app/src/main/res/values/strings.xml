@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">AllTabs</string>
+    <string name="app_name_caixa_alta">ALLTABS</string>
+
+
+    <!-- Config-->
+    <string name="settings">Settings</string>
+
+    <!-- Tela Perfil -->
+    <string name="botao_voucher">Meus Vouchers</string>
+    <string name="botao_cadastro">Info</string>
+    <string name="botao_cartao">Meu Cartão</string>
+    <!-- Tela Cadastro Usuário-->
+    <string name="cpf_usuario">CPF</string>
+    <string name="email_usuario">Email</string>
+    <!-- Tela Cadastro Cartão-->
+    <string name="nome_cartao">Nome no Cartão</string>
+    <string name="numero_cartao">Número do Cartão</string>
+    <string name="codigo_seguranca">Código de Segurança</string>
+    <string name="validade_cartao">Data de Validade</string>
+    <!-- Tela Configurações -->
+    <string name="titulo_notificacao">Notificações</string>
+    <string name="titulo_permissao">Permissões</string>
+    <string name="nota_paulista">Permitir o uso do CPF para Nota Paulista</string>
+    <string name="email_promocao">Permitir o envio de emails contendo promoções</string>
+    <string name="novos_restaurantes">Permitir o envio de emails informando novos restaurantes</string>
+    <!-- Extras -->
+    <string name="molho_extra">Molhos</string>
+    <string-array name="ponto_carne">
+        <item>Mal Passado</item>
+        <item>Ao Ponto</item>
+        <item>Bem Passado</item>
+    </string-array>
+    <string name="botao_adicionar">Adicionar</string>
+    <!-- <string name="quantidade_item">Quantidade</string> -->
+    <!-- Tela ComandaActivity -->
+    <string name="titulo_comanda">Comanda</string>
+    <string name="botao_finalizar">Finalizar Pedido</string>
+    <string name="valor_total">Total</string>
+    <string name="valor_zero">R$ 0.00</string>
+    <string name="quantidade_item">Quantidade</string>
+    <!-- Tela Cardápio -->
+    <string name="título_cardapio">Cardápio</string>
+    <!-- Tela Pagamento -->
+    <string name="valor_total_pedido">Valor Total do Pedido</string>
+    <string name="total_pessoas">Total de Pessoas no Pedido</string>
+    <string name="valor_por_pessoa">Valor do Pedido por Pessoa</string>
+    <string name="botao_pagamento">Solicitar Pagamento</string>
+    <string name="cifrao">R$</string>
+
+</resources>
