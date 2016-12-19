@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "br.com.prototipoat"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [manifestApplicationId: "${applicationId}",
+                                onesignal_app_id: "d8acb6c3-4693-4556-9314-02209e1dccea",
+                                onesignal_google_project_number: "651777790014"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.4.0'
+
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.volley:volley:1.0.0'
+
+    compile 'com.onesignal:OneSignal:3.+@aar'
+    // Required for OneSignal, even if you have added FCM.
+    compile 'com.google.android.gms:play-services-gcm:+'
+    // Required for geotagging
+    compile "com.google.android.gms:play-services-location:+"
+    testCompile 'junit:junit:4.12'
+}

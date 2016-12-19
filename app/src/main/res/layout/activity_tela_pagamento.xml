@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorBackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llLine1"
+            android:layout_alignBottom="@+id/llLine2"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valor_total_pedido"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_pessoas"
+                android:textSize="20dp"
+                android:layout_weight="1.05"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valor_por_pessoa"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/llLine1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/llLine2"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txvValorTotal"
+                android:text="@string/valor_zero"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtQtdePessoas"
+                android:gravity="center"
+                android:text="1"
+                android:inputType="numberDecimal"
+                android:maxLength="2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txvValorPorPessoa"
+                android:text="@string/valor_zero"
+                android:textSize="20dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSolicitarPagamento"
+        android:layout_alignParentBottom="true"
+        android:text="@string/botao_pagamento"
+        android:background="@drawable/fundoprimary"
+        android:textColor="@color/colorBackground"
+        android:elevation="4dp"/>
+
+</RelativeLayout>

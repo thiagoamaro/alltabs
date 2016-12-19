@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar_mainmenu"
+        android:id="@+id/incMenu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llUsuario"
+        android:layout_below="@id/incMenu">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:id="@+id/imvFotoUsuario"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txvNomeUsuario"
+                android:text="@string/app_name"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/llLine1"
+        android:orientation="vertical"
+        android:layout_below="@+id/llUsuario"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnVoucher"
+            android:text="@string/botao_voucher"
+            android:background="@drawable/fundoaccent"
+            android:elevation="4dp"
+            android:textColor="@color/colorBackground"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llLine2"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llLine1"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInfoUsuario"
+            android:text="@string/botao_cadastro"
+            android:layout_weight="0.5"
+            android:background="@drawable/fundoaccent"
+            android:elevation="4dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorBackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCartao"
+            android:text="@string/botao_cartao"
+            android:layout_weight="0.5"
+            android:background="@drawable/fundoaccent"
+            android:elevation="4dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBackground"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_lanches"
+        android:orderInCategory="100"
+        android:icon="@drawable/hamburger"
+        android:title="Lanches"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_bebidas"
+        android:orderInCategory="100"
+        android:icon="@drawable/soda"
+        android:title="Bebidas"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_sobremesa"
+        android:orderInCategory="100"
+        android:icon="@drawable/icecream"
+        android:title="Sobremesa"
+        android:showAsAction="always"/>
+
+</menu>

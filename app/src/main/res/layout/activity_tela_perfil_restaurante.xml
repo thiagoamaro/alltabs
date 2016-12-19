@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar_mainmenu"
+        android:id="@+id/incMenu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/incMenu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llLogo"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imvLogoRestaurante"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/llLogo"
+            android:padding="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imvMedalhaRestaurante"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginBottom="5dp"/>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imvMedalhaRestaurante"
+                    android:layout_above="@+id/flQrButton"
+                    android:background="@drawable/text_box"
+                    android:padding="5dp"
+                    android:layout_marginBottom="95dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvDescricao"
+                        android:padding="5dp"
+                        android:textSize="25dp" />
+                </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flQrButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imbAbreComanda"
+            android:src="@drawable/comanda_icon"
+            android:background="@drawable/fundoaccent"
+            android:elevation="4dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp" />
+    </FrameLayout>
+</RelativeLayout>
